@@ -3,8 +3,8 @@ from telegram import Update, Bot
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # خواندن توکن و آیدی کانال از محیط
-TOKEN = os.getenv('TOKEN')
-CHANNEL_ID = int(os.getenv('CHANNEL_ID'))
+TOKEN = os.getenv('TOKEN')  # این از متغیر محیطی TOKEN استفاده می‌کنه
+CHANNEL_ID = int(os.getenv('CHANNEL_ID'))  # این از متغیر محیطی CHANNEL_ID استفاده می‌کنه
 
 # تابع پاسخ به دستور /start
 def start(update: Update, context: CallbackContext):
